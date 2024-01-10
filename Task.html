@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task1 Create Employee Class
+        class Employee {
+                constructor(id, name, salary, designation, exp) {
+                    this.id = id;
+                    this.name = name;
+                    this.salary = salary;
+                    this.designation = designation;
+                    this.exp = exp;
+                }
+                increament() {
+                    if (this.exp >4) {
+                        this.salary = this.salary + (0.1*this.salary);
+                   }
+                   else{
+                    this.salary = this.salary + (0.2*this.salary);
+                   }
+
+                 }
+            }
+            let emp = new Employee(123, "Rajesh", 30000, "S/E", 2);
+            let emp1 = new Employee(111, "Lokesh", 40000, "Product mgr", 1);
+            let emp2 = new Employee(131, "Praveen", 35000, "Team Leader", 4);
+            let emp3 = new Employee(112, "Kumar", 55000, "Manager", 7);
+            // console.log(emp);
+            // console.log(emp1);
+            // console.log(emp2);
+            // console.log(emp3);
+            emp.increament();
+            console.log(emp)
+            emp1.increament();
+            console.log(emp1)
+            emp2.increament();
+            console.log(emp2)
+            emp3.increament();
+            console.log(emp3)
+
+            //Task2 Create Person Class
+            class Person{
+                constructor(name,age,gender,color){
+                    this.name=name;
+                    this.age=age;
+                    this.gender=gender;
+                    this.color=color;
+                }
+                Gender(){
+                    if(this.gender=='Male'){
+                        this.gender = this.gender;
+                    }
+                    else{
+                        this.gender = this.gender;
+                    }
+                }
+            }
+            let person=new Person("Rajesh",22,"Male","white");
+            // console.log(person);
+            let person3=new Person("venkat",20,"Male","white");
+            // console.log(person3);
+            let person1=new Person("Sirisha",22,"female","white");
+            // console.log(person1);
+            person.Gender();
+            console.log(person)
+            person1.Gender()
+            console.log(person1)
+
+
+            //Task 3 Create Car Class
+
+            class Car{
+                constructor(brand,model,price,milleage,DateOfProduction){
+                    this.brand=brand;
+                    this.model=model;
+                    this.price=price;
+                    this.milleage=milleage;
+                    this.DateOfProduction=DateOfProduction;
+
+                }
+                dateOfProduction(){
+                    if(this.DateOfProduction>2000){
+                        this.DateOfProduction=this.DateOfProduction;
+                    }
+                    else{
+                        this.DateOfProduction=this.DateOfProduction;   
+                    }
+                }
+            }
+            let car =new Car("TATA","TataNexon","8.09lakh","24kmpl",1999);
+            let car1 =new Car("Maruti","Maruti Swift","5.99lakh","30kmpl",2000);
+            let car2 =new Car("TATA","Tata Punch","5.09lakh","26kmpl",1997);
+            let car3 =new Car("Hyundai","Hyundai creta","10.09lakh","18kmpl",1998);
+
+            car.dateOfProduction();
+            console.log(car)
+            car1.dateOfProduction();
+            console.log(car1)
+            car2.dateOfProduction();
+            console.log(car2)
+            car3.dateOfProduction();
+            console.log(car3)
+
+            //Task4  Remote Class
+            class Remote{
+                constructor(buttons,color,lightType){
+                    this.buttons=buttons;
+                    this.color=color;
+                    this.lightType=lightType;
+                }
+                remoteType(){
+                    if(this.buttons>20){
+                        this.buttons=this.buttons;
+                    }else{
+                        this.buttons=this.buttons;
+                    }
+                }
+            }
+            let remote=new Remote(30,"black","Led");
+            let remote1=new Remote(19,"white","normal");
+            remote.remoteType()
+            console.log(remote)
+            remote1.remoteType()
+            console.log(remote1)
+           
+            //Task5 Create Computer Class
+            class Computer{
+                constructor(brand,color,Ram,Processor,cost){
+                    this.brand=brand;
+                    this.color=color;
+                    this.Ram=Ram;
+                    this.Processor=Processor;
+                    this.cost=cost
+                }
+                computerType(){
+                    if(this.cost>20000){
+                        this.cost=this.cost;
+                    }else{
+                        this.cost=this.cost;
+                    }
+                }
+            }
+            let comp=new Computer("Hp","gray","12gb","Ryzen5",50000);
+            let comp1=new Computer("Asus","Black","16gb","I5",60000);
+            comp.computerType();
+            console.log(comp);
+            comp1.computerType();
+            console.log(comp1);
+        
+            
+
+        </script>
+    
+    </body>
+    
+    </html>
